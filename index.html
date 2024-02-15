@@ -18,7 +18,15 @@
   <link rel="stylesheet" href="assets/img/logo.png" type="image/png">
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="module" src="assets/js/main.js" defer></script>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "im7-NDmbBPmaRhTg2",
+      });
+    })();
+  </script>
 </head>
 
 <body id="body" class="dark-mode"> 
@@ -49,8 +57,8 @@
         <div class="navbar__toggle--darkmode">
           <input type="checkbox" name="" id="darkmode-toggle" class="navbar__toggle--darkmode-input">
           <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
-            <i class='bx bx-sun navbar__toggle--darkmode-sun'></i>
             <i class='bx bx-moon navbar__toggle--darkmode-moon'></i>
+            <i class='bx bx-sun navbar__toggle--darkmode-sun'></i>
           </label>
         </div>
         <div class="navbar__toggle--language">
@@ -440,6 +448,7 @@
       </div>
     </div>
     <p class="footer__copy">
+      All rights reserved
     </p>
   </footer>
   
